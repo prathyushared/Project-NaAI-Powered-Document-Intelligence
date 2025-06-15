@@ -1,0 +1,362 @@
+/* Color Palette */
+:root {
+  --primary-color: #5a5ea6; /* Dark Blue */
+  --secondary-color: #9333ea; /* Purple */
+  --light-bg: #f4f6f9;
+  --button-bg: #6366f1;
+  --button-hover-bg: #4f46e5;
+  --dark-text: #333;
+  --light-text: #666;
+}
+
+/* General Styling */
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #e0c3fc 0%, #8ec5fc 100%);
+
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Ensure the gradient covers the full height */
+  display: flex;
+  flex-direction: column;
+}
+/* Header */
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem 3rem;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.title-container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 0.2rem;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+/* Upload Section */
+.upload-section {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+.upload-section {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%), linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%);
+  background-size: 10px 10px;
+  background-color: #ffffff;  /* Add this to maintain a clean white background while adding texture. */
+}
+
+.upload-box {
+  max-width: 600px; /* reduced horizontal size */
+  margin: 0 auto;    /* center horizontally */
+}
+
+
+.upload-section:hover {
+  transform: scale(1.02);
+}
+
+.upload-box {
+  border: 2px dashed var(--primary-color);
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-box:hover {
+  background-color: #f1f5f9;
+  border-color: var(--button-hover-bg);
+}
+
+.upload-box:active {
+  background-color: #e7eaf1;
+  transform: scale(0.98);
+}
+
+.upload-button {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  width: auto;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+.upload-button:hover {
+  background-color: var(--button-hover-bg);
+  transform: translateY(-3px);
+}
+
+/* Summary Box */
+.summary-box {
+  background-color: white;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 15px;
+  text-align: left;
+  max-width: 800px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* Subtle blur effect */
+}
+
+.summary-text {
+  white-space: pre-wrap;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  color: var(--dark-text);
+  animation: fadeInSummary 2s ease-out;
+}
+
+@keyframes fadeInSummary {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.summary-actions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.summary-btn {
+  padding: 15px 30px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.speak {
+  background-color: #10b981;
+}
+
+.speak:hover {
+  background-color: #059669;
+}
+
+.download {
+  background-color: #6366f1;
+}
+
+.download:hover {
+  background-color: #4f46e5;
+}
+
+/* Floating Action Button */
+.chatbot-fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--secondary-color);
+  color: white;
+  font-size: 2rem;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.chatbot-fab:hover {
+  transform: translateY(-5px);
+}
+
+.chatbot-fab:focus {
+  outline: none;
+}
+
+/* Chatbot Styles */
+.chatbot-container {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f3f4f6;
+  border-radius: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chatbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-messages {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.chat-message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user-message {
+  background-color: #e0f7fa;
+  align-self: flex-end;
+}
+
+.bot-message {
+  background-color: #f1f1f1;
+  align-self: flex-start;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+}
+
+.chat-input input {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 1rem;
+  border: 1px solid #ddd;
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+.microphone-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.microphone-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.microphone-btn:hover {
+  background-color: #45a049;
+}
+
+/* Notification */
+.notification {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #10b981;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: none;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #e5e5e5;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .upload-section {
+    padding: 20px;
+  }
+
+  .upload-button {
+    font-size: 1rem;
+  }
+
+  .summary-box {
+    padding: 20px;
+  }
+
+  .chatbot-fab {
+    bottom: 30px;
+    right: 20px;
+  }
+}
