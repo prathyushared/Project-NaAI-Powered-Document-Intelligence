@@ -72,7 +72,24 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 Project Images:
 
 ![Image](https://github.com/user-attachments/assets/798456a7-c2eb-46ed-93f6-b6db1f669296)
+                
+                 Interface of the page
+
+
 ![Image](https://github.com/user-attachments/assets/0e0aa82e-db13-4f90-8373-6fef0446ce95)
+
+                  Interface of chatbot 
+ 
 ![Image](https://github.com/user-attachments/assets/d1092450-338e-46c5-ada5-280aed86b62a)
+
+                   Summarization part
+
+                   
 ![Image](https://github.com/user-attachments/assets/f792c918-0806-45b4-8a60-b8149270aff7)
+
+                 Chatbot Interaction
+
+                 
 ![Image](https://github.com/user-attachments/assets/6a942963-8f4b-49c9-8491-2257970f6de2)
+
+                  Voice Assistant
